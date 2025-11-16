@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.klef.devops.model.Voter;
 import com.klef.devops.repository.VoterRepo;
@@ -19,6 +20,7 @@ import com.klef.devops.service.VoterServiceImpl;
 
 @RestController
 @CrossOrigin(origins ="*")
+@RequestMapping("/api")
 public class VoterController {
 	
 	@Autowired
@@ -27,7 +29,7 @@ public class VoterController {
 	@Autowired
 	private VoterRepo vr;
 	
-	@GetMapping("/")
+	@GetMapping("")
 	public String home() {
 		return "BACKEND IS WORKING";
 	}
