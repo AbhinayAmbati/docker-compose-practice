@@ -71,7 +71,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: abhinay7/k8-backend:latest  # <-- change this
+          image: abhinay7/dockercompose1-backend:latest  # <-- change this
           ports:
             - containerPort: 2000
 ---
@@ -110,7 +110,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: abhinay7/k8-frontend:latest  # <-- change this
+          image: abhinay7/dockercompse1-frontend:latest  # <-- change this
           ports:
             - containerPort: 80
 ---
